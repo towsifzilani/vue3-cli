@@ -28,4 +28,13 @@
     width: 100%;
     height: 100%;
   }
+
+  .modal.sale {
+    background: crimson;
+    color: white;
+  }
+
+  .modal.sale h1 {
+    color: white;
+  }
 </style>
