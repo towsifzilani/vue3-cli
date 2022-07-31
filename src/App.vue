@@ -10,6 +10,7 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import Modal from './components/Modal.vue'
+import './assets/css/global.css'
 
 export default {
   name: 'App',
