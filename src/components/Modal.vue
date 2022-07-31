@@ -1,12 +1,17 @@
 <template>
     <div class="backdrop">
-        <div class="modal">
-            <h1>This is the first modal</h1>
-            <p>I am the modal content</p>
+        <div class="modal" :class="{ sale: theme === 'sale'}">
+            <h1>{{ header }}</h1>
+            <p>{{ content }}</p>
         </div>
     </div>
 </template>
 
+<script>
+  export default {
+    props: [ 'header','content','theme']
+  }
+</script>
 
 <style scoped>
     .modal {
