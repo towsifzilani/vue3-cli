@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue-3-firebase Learning topics</title>
+    <link rel="icon" href="./src/assets/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-dark.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
+    <style>
+        body {
+            background: url('./src/assets/bg2.jpg') no-repeat center center fixed;
+        }
+        .list-group-item {
+            color: #000000 !important;
+            font-size: 15px;
+            font-weight: normal;
+            background: linear-gradient(162deg, rgb(231 240 255 / 80%), rgb(239 219 213 / 90%));
+        }
+        .list-group-item:first-child {
+            border-radius: 0;
+        }
+        .h-100 { 
+            height: 100%;
+        }
+        .description { 
+            height: auto;
+            font-size: 15px;
+            background: linear-gradient(162deg, rgb(231 240 255 / 80%), rgb(239 219 213 / 80%));
+            color: #000000;
+        }
+        .list-group-item:hover { 
+            color: #198754 !important;
+            font-weight: 500;
+        }
+        .learning-tools {
+            background: linear-gradient(248deg, rgb(203 215 234 / 80%), rgb(243 206 195 / 80%));
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        
+        .learning-tools a {
+            font-size: 30px;
+            color: #080808;
+            font-family: sans-serif;
+            font-weight: 900;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container p-0">
+        <div class="row my-5">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="learning-tools">
+                            <a href="https://www.youtube.com/watch?v=YrxBCBibVo0&list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1" target="_blank"><i class="fab fa-youtube"></i> Vue@3 Lessons for Beginners | </a>
+                            <a href="https://vuejs.org/guide/introduction.html" target="_blank"><i class="fab fa-vuejs"></i> Vue@3 Official Guideline</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Install Nodejs</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Install npm globally</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Create Vue project</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Learn Vue folder structure</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Project Walkthroug</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Template Refs</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Handle Multiple Components</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Scoped & Global CSS</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Props</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Emitting Custom Events</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Click event modifiers</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Slots & Name Slots</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Create another modal project</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Click event modifiers</a>
+                          </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="p-5 description">
+                            <h4 class="fw-bold">What is Vue?</h4>
+                            <p class="">Vue (pronounced /vjuː/, like view) is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS and JavaScript, and provides a declarative and component-based programming model that helps you efficiently develop user interfaces, be it simple or complex.</p>
+                            <p>Here is a minimal example:</p>
+                                <pre class="bg-dark">
+                                    <code class="language-js">
+    import { createApp } from 'vue'
+
+        createApp({
+            data() {
+                return {
+                count: 0
+                }
+            }
+        }).mount('#app')
+                                    </code>
+                                </pre>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Install Nodejs</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Install npm globally</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Create Vue project</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Learn Vue folder structure</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Project Walkthroug</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Template Refs</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Handle Multiple Components</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Scoped & Global CSS</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Props</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Emitting Custom Events</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Click event modifiers</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Slots & Name Slots</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Create another modal project</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-check text-success"></i> &nbsp;Click event modifiers</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

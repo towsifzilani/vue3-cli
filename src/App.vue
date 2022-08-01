@@ -7,9 +7,17 @@
   <br>
   <br>
   <div v-if="showModal">
-    <Modal :header="header" :content="content" theme="sale" @close="toggleModal"/>
+    <Modal theme="sale" @close="toggleModal">
+    <template v-slot:links>
+        <a href="#">Sign up</a>
+        <a href="#">Sign in</a>
+    </template>
+      <h1>Hurrah! You are right there</h1>
+      <p>Enjoy your holidays with joy and peace...</p>
+
+    </Modal>
   </div>
-  <button @click="toggleModal">Open Modal</button>
+  <button @click="toggleModal">Open Modal (shift key)</button>
 </template>
 
 <script>
