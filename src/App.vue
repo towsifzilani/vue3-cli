@@ -8,16 +8,30 @@
   <br>
   <div v-if="showModal">
     <Modal theme="sale" @close="toggleModal">
-    <template v-slot:links>
-        <a href="#">Sign up</a>
-        <a href="#">Sign in</a>
-    </template>
+      <template v-slot:links>
+          <a href="#">Sign up</a>
+          <a href="#">Sign in</a>
+      </template>
+      <h1>Hurrah! You are right there</h1>
+      <p>Enjoy your holidays with joy and peace...</p>
+
+    </Modal>
+  </div>
+  <br>
+  <br>
+  <div v-if="showModalTwo">
+    <Modal theme="sale" @close="toggleModalTwo">
+      <template v-slot:links>
+          <a href="#">Sign up now</a>
+          <a href="#">Read more</a>
+      </template>
       <h1>Hurrah! You are right there</h1>
       <p>Enjoy your holidays with joy and peace...</p>
 
     </Modal>
   </div>
   <button @click="toggleModal">Open Modal (shift key)</button>
+  <button @click="toggleModalTwo">Open Another Modal</button>
 </template>
 
 <script>
@@ -33,7 +47,8 @@ export default {
       title: "My First Vue Project",
       header: "This is header content",
       content: "This is body content",
-      showModal: false
+      showModal: false,
+      showModalTwo: false,
     }
   },
   methods: {
@@ -43,6 +58,9 @@ export default {
     },
     toggleModal() {
       this.showModal=!this.showModal
+    },
+    toggleModalTwo() {
+      this.showModalTwo=!this.showModalTwo
     }
   }
 }
@@ -50,7 +68,7 @@ export default {
 
 <style>
 
-#app {
+#app, .modal {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
