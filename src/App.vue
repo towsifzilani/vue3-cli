@@ -6,7 +6,7 @@
   <button @click="handleClick">Click Me</button>
   <br>
   <br>
-  <div v-if="showModal">
+  <teleport to="#modals" v-if="showModal">
     <Modal theme="sale" @close="toggleModal">
       <template v-slot:links>
           <a href="#">Sign up</a>
@@ -16,7 +16,7 @@
       <p>Enjoy your holidays with joy and peace...</p>
 
     </Modal>
-  </div>
+  </teleport>
   <br>
   <br>
   <div v-if="showModalTwo">
